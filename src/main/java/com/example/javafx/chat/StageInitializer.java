@@ -2,7 +2,8 @@ package com.example.javafx.chat;
 
 import static com.example.javafx.chat.ChartApp.*;
 
-import com.example.javafx.LoginEmaple.LoginTable;
+import com.example.javafx.loginExample.LoginTable;
+import com.example.javafx.loginExample.withCss.LoginTableWithCss;
 import com.example.javafx.chat.ColorRectangl.ColoredRectangle;
 
 import javafx.stage.Stage;
@@ -19,6 +20,8 @@ public class StageInitializer implements ApplicationListener<StageReadyEvent> { 
     private ColoredRectangle coloredRectangle;
     @Autowired
     private LoginTable loginTable;
+    @Autowired
+    private LoginTableWithCss loginTableWithCss;
 
     @Override
     public void onApplicationEvent(StageReadyEvent event) {
@@ -26,7 +29,10 @@ public class StageInitializer implements ApplicationListener<StageReadyEvent> { 
         Stage stage = event.getStage();
 
 //        coloredRectangle.startApp(stage);
-        loginTable.startApp(stage);
+//        loginTable.startApp(stage);
+
+            loginTableWithCss.startApp(stage);
+
 
     }
 }

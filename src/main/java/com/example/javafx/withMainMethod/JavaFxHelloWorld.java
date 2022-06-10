@@ -14,6 +14,11 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Font;
 import javafx.stage.Stage;
+import org.springframework.core.io.ClassPathResource;
+
+import java.io.File;
+import java.io.IOException;
+import java.net.URL;
 
 
 public class JavaFxHelloWorld extends Application {
@@ -25,8 +30,17 @@ public class JavaFxHelloWorld extends Application {
     }
 
     @SuppressWarnings("static-access")
-    public void start(Stage stage) {
+    public void start(Stage stage)  {
         stage.setTitle("Hello World!");
+
+//        try {
+//            URL url = new ClassPathResource("classpath:withCss/Login.css").getURL();
+            File file = new File("C:\\Users\\Dzmitry_Darashuk\\Projects\\javaFX\\CourceFiles\\Ex_Files_JavaFX_GUI_Dev\\Ch01\\01_03\\01_03_complete\\Main.java");
+            System.out.println(file.length());
+//            System.out.println(url);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
 
         GridPane grid = new GridPane();
         grid.setHgap(0);
