@@ -1,4 +1,4 @@
-package com.example.javafx.chat;
+package com.example.javafx.withMainMethod;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
