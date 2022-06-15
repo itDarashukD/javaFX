@@ -83,7 +83,6 @@ public class LoginTableWithCss {
             e.printStackTrace();
         }
 
-
         //stage
         stage.setTitle("JavaX Login form");
         stage.setScene(scene);

@@ -4,33 +4,18 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 7, 2016, 5:23:51 PM
+    Created on : Apr 15, 2016, 2:09:56 PM
     Author     : Peggy Fisher 
 */
 
-.root {-fx-background-image: url("background.png");}
-
-.label {
-    -fx-font-size: 12px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #e31552;
-}
-
-#login-text{
-    -fx-font-size:32px;
-    -fx-font-family: "Arial Black";
-    -fx-fill: #115E7F;
-}
-
-#actiontarget {
-    -fx-fill:WHITE;
-    -fx-font-weight:bold;
-
-}
 .button {
     -fx-text-fill:white;
     -fx-font-family:"Arial Narrow";
     -fx-font-weight:bold;
     -fx-background-color:linear-gradient(#61a2b1,#2A5058);
+}
 
+#textstyle {
+    -fx-font: 30px "Arial";
+    -fx-fill:white;
 }
